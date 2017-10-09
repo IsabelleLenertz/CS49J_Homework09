@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+/**
+ * Class managing a list of Staff members
+ * @author Isabelle Delmas
+ *
+ */
 public class Staff {
 	private ArrayList<String> names;
 
@@ -107,7 +112,7 @@ public class Staff {
 			int count = 0;
 			for(int j = 0; j < temp.length(); j++) {
 				String letter = temp.substring(j, j+1).toUpperCase();
-				if (letter.equals("A") || letter.equals("E")|| letter.equals("I") || letter.equals("O") || letter.equals("U") || letter.equals("Y") ) {
+				if (letter.equals("A") || letter.equals("E")|| letter.equals("I") || letter.equals("O") || letter.equals("U")) {
 					count++;
 				}
 			}
@@ -120,8 +125,12 @@ public class Staff {
 		
 		return maxName;
 	}
+	
+	/**
+	 * Get a string representation of the content of the Staff
+	 */
 	public String toString() {
-		//gets a string represent ion using ArrayList's toString method
+		//gets a string represention using ArrayList's toString method
 		return this.names.toString();
 	}
 }

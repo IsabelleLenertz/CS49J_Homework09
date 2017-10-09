@@ -76,7 +76,6 @@ public class StaffTester
         System.out.println("equal?: " + empty.equals(empty));
         System.out.println("Expected: true");
         
-        System.out.println(lister);
         System.out.println(lister.mostVowels());
         System.out.println("Expected: Keomahavong");
         
